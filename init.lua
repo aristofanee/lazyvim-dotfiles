@@ -16,7 +16,7 @@ vim.opt.shellxquote = '"'
 -- This tells Neovim how to pass commands to the shell.
 -- It's good practice to set this with PowerShell for proper command execution.
 vim.opt.shellcmdflag = '-NoLogo -NoProfile -Command'
-
+-- this is a test for lazygit actually dont think about it too much
 -- Optional: Set the program used to read the shell output
 -- This ensures Neovim can correctly interpret the output stream.
 vim.opt.shellxquote = '' -- No quotes needed for PowerShell
