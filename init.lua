@@ -5,7 +5,7 @@ vim.g.neovide_font = "JetBrainsMonoNL"
 vim.g.neovide_cursor_animation_length = 0
 
 -- Set PowerShell as the default shell
-vim.opt.shell = "powershell.exe -NoLogo -NoProfile"
+vim.opt.shell = "powershell.exe -NoLogo"
 
 vim.opt.shellxquote = '"'
 
