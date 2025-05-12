@@ -20,4 +20,11 @@ vim.opt.shellcmdflag = '-NoLogo -NoProfile -Command'
 -- Optional: Set the program used to read the shell output
 -- This ensures Neovim can correctly interpret the output stream.
 vim.opt.shellxquote = '' -- No quotes needed for PowerShell
-vim.opt.shellredir = '> %s 2>&1' -- Redirect stderr to stdout
+vim.opt.shellredir = '> %s 2>&1' -- Redivim.opt.updatetime = 100       -- Quick UI updates
+
+-- Stuff done for optimization
+vim.opt.updatetime = 100  -- Very responsive 100ms setting
+vim.opt.timeoutlen = 300       -- Faster key sequence completion
+vim.opt.lazyredraw = false     -- Draw screen during macros (your CPU can handle it)
+vim.opt.ttyfast = true         -- Faster terminal connection (though usually on by default in Neovim)
+vim.g.cursorline_timeout = 100 -- If you use cursorline pluginrect stderr to stdout
