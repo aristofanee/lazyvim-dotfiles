@@ -8,7 +8,7 @@ return {
       "stevearc/dressing.nvim", -- optional for vim.ui.select
     },
     config = function()
-      require("flutter-tools").setup {
+      require("flutter-tools").setup({
         ui = {
           -- the border type to use for all floating windows, the same options that
           -- are available for vim.lsp.util.open_floating_preview
@@ -17,14 +17,14 @@ return {
           -- the plugin's custom UI
           -- please note that this option is eventually going to be deprecated and users will
           -- need to decide to use `vim.notify` or other notification plugins instead
-          notification_style = 'native',
+          notification_style = "native",
         },
         decorations = {
           statusline = {
             -- set to true to be able to see flutter app device info in the statusline
             app_version = true,
             device = true,
-          }
+          },
         },
         widget_guides = {
           enabled = true,
@@ -45,7 +45,7 @@ return {
             showTodos = true,
             completeFunctionCalls = true,
             enableSnippets = true,
-          }
+          },
         },
         debugger = {
           enabled = true,
@@ -62,30 +62,19 @@ return {
         closing_tags = {
           highlight = "ErrorMsg", -- highlight for the closing tag
           prefix = ">", -- character to use for close tag e.g. > Widget
-          enabled = true -- set to false to disable
+          enabled = true, -- set to false to disable
         },
-      }
+      })
     end,
   },
-  
+
   -- Dart syntax highlighting improvement
   {
     "dart-lang/dart-vim-plugin",
     lazy = false,
     ft = { "dart" },
   },
-  
-  -- Optional: Mason for managing LSP servers
-  {
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, {
-        "flutter-tools",
-      })
-    end,
-  },
-  
+
   -- DAP (Debugging) support - uncomment if you need debugging support
   -- {
   --   "mfussenegger/nvim-dap",
