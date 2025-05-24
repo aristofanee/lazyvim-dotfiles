@@ -13,4 +13,10 @@ return {
     },
     config = function() end,
   },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "oxocarbon",
+    },
+  },
 }
